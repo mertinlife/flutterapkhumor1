@@ -123,7 +123,7 @@ class SettingsScreen extends ConsumerWidget {
                         context: context,
                         applicationName: 'Odyssey',
                         applicationVersion: '1.0.0',
-                        applicationIcon: FlutterLogo(size: 64, textColor: Theme.of(context).colorScheme.primary),
+                        applicationIcon: const FlutterLogo(size: 64),
                         children: const [
                           Text('A mood tracking and time management application.'),
                         ],
