@@ -11,7 +11,7 @@ class AnalyticsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(Insights),
+        title: const Text('Insights'),
         centerTitle: false,
       ),
       body: ResponsiveCenter(
@@ -28,14 +28,14 @@ class AnalyticsScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            Welcome to Insights,
+                            'Welcome to Insights',
                             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            Track your mood patterns and time usage with detailed analytics.,
+                            'Track your mood patterns and time usage with detailed analytics.',
                             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                               color: Theme.of(context).colorScheme.onSurfaceVariant,
                             ),
@@ -58,7 +58,7 @@ class AnalyticsScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                Analytics Overview,
+                                'Analytics Overview',
                                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -75,20 +75,20 @@ class AnalyticsScreen extends StatelessWidget {
                             children: [
                               _buildStatCard(
                                 context,
-                                Mood Records,
-                                42,
+                                'Mood Records',
+                                '42',
                                 Icons.sentiment_satisfied,
                               ),
                               _buildStatCard(
                                 context,
-                                Time Tracked,
-                                24h 15m,
+                                'Time Tracked',
+                                '24h 15m',
                                 Icons.timelapse,
                               ),
                               _buildStatCard(
                                 context,
-                                Days Active,
-                                28,
+                                'Days Active',
+                                '28',
                                 Icons.calendar_today,
                               ),
                             ],
@@ -115,7 +115,7 @@ class AnalyticsScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                Mood Count,
+                                'Mood Count',
                                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -127,7 +127,7 @@ class AnalyticsScreen extends StatelessWidget {
                             ],
                           ),
                           const SizedBox(height: 8),
-                          const ChartFrame(chartType: ChartType.moodCount, title: ),
+                          const ChartFrame(chartType: ChartType.moodCount, title: ''),
                         ],
                       ),
                     ),
@@ -143,7 +143,7 @@ class AnalyticsScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                Mood Fluctuation,
+                                'Mood Fluctuation',
                                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -155,7 +155,7 @@ class AnalyticsScreen extends StatelessWidget {
                             ],
                           ),
                           const SizedBox(height: 8),
-                          const ChartFrame(chartType: ChartType.moodVariation, title: ),
+                          const ChartFrame(chartType: ChartType.moodVariation, title: ''),
                         ],
                       ),
                     ),

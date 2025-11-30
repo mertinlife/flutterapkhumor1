@@ -183,7 +183,7 @@ class MoodVariationLineChart extends StatelessWidget {
       margin: const EdgeInsets.only(right: 8),
       child: SvgPicture.asset(
         icon,
-        color: color,
+        colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
         height: 32,
         width: 32,
       ),

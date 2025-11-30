@@ -114,7 +114,7 @@ class MoodRecordCard extends StatelessWidget {
         width: 64,
         indicator: SvgPicture.asset(
           record.iconPath,
-          color: Color(record.color),
+          colorFilter: ColorFilter.mode(Color(record.color), BlendMode.srcIn),
         ),
       ),
     );
