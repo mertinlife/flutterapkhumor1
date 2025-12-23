@@ -28,7 +28,10 @@ class MoodOption extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 moodConfiguration.iconPath,
-                color: isSelected ? Theme.of(context).colorScheme.surface : moodConfiguration.color,
+                colorFilter: ColorFilter.mode(
+                  isSelected ? Theme.of(context).colorScheme.surface : moodConfiguration.color,
+                  BlendMode.srcIn,
+                ),
                 height: Sizes.p64,
                 width: Sizes.p64,
               ),
