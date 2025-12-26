@@ -34,3 +34,4 @@ Built with the Flutter Framework utilizing [Hive](https://github.com/hivedb/hive
 
 ## Author
 [José Castelo](https://github.com/jccb15)
+\n## Primeira Feature Teste\nAdicionando uma linha para testar o PR.
